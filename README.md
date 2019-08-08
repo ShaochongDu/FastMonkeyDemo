@@ -53,15 +53,19 @@
 
 ## Xcode配置
 
-	* 选择Xcode编译版本
+* 选择Xcode编译版本
 
-		* 可以使用Xcode 10.1版本进行编译，打开Xcode -> Preferences -> Locations -> Command Line Tools 选择Xcode 10.1
+	* 可以使用Xcode 10.1版本进行编译，打开Xcode -> Preferences -> Locations -> Command Line Tools 选择Xcode 10.1
 
-	* 开发者证书及签名相关配置
+* 开发者证书及签名相关配置
 
-	* 低版本Xcode运行高版本真机（如:Xcode 9.2运行iOS 11.x、Xcode 10.1运行iOS 12.X）
+* 低版本Xcode运行高版本真机（如:Xcode 9.2运行iOS 11.x、Xcode 10.1运行iOS 12.X）
 
-		* 可下载最新版本Xcode，找到对应安装App（一般在‘应用程序’目录中），右键 显示包内容 ▸ ⁨Contents⁩ ▸ ⁨Developer⁩ ▸ ⁨Platforms⁩ ▸ ⁨iPhoneOS.platform⁩ ，将该		目录下需要的包拷贝到Xcode 9.2/Xcode 10.1 App对应的目录中即可
+	* 可下载最新版本Xcode，找到对应安装App（一般在‘应用程序’目录中），右键 显示包内容 ▸ ⁨Contents⁩ ▸ ⁨Developer⁩ ▸ ⁨Platforms⁩ ▸ ⁨iPhoneOS.platform⁩ ，将该		目录下需要的包拷贝到Xcode 9.2/Xcode 10.1 App对应的目录中即可
+	
+* 运行低版本手机
+
+	* 查看targets -> XCTestWDUITests -> Build Settings -> iOS Deployment Target 将版本调至手机版本，否版本太高无法运行
 
 
 ## Fastmonkey运行

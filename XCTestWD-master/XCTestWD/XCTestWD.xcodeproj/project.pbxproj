@@ -1011,7 +1011,7 @@
 					"$(SRCROOT)/",
 				);
 				INFOPLIST_FILE = XCTestWDUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -1049,7 +1049,7 @@
 					"$(SRCROOT)/",
 				);
 				INFOPLIST_FILE = XCTestWDUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-lxml2",
