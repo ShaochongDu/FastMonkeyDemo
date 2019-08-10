@@ -14,7 +14,7 @@ public class XCTestWDMonkey {
     }
     public func startMonkey() -> Int {
         
-        let bundleID = "com.aiyingshi.aystest"
+        let bundleID = "com.ichinait.carpassenger"
 
         var app : XCUIApplication!
         var session : XCTestWDSession!

@@ -89,26 +89,55 @@
 
 * 开启自动化测试
 
-	* 直接使用Xcode运行
+    * 安装对应bundleID App到手机或模拟器
 
-		* 选择XCTestWDUnitTest工程并使用真机，执行 command + u 开启UITest
-	
-	* 命令启动（支持多设备）	
-
-		* 进入 XCTestWD 所在目录
-
-		* 执行以下命令
-
-			```
-			xcodebuild -project XCTestWD.xcodeproj \
-			-scheme XCTestWDUITests \
-			-destination 'platform=iOS,name=Analysys_01' \
-			XCTESTWD_PORT=8001 \
-			clean test
-			```
-			
- 			注：Analysys_01：修改为运行手机的名称；8001：不同手机修改不同端口号；
-
+        * 手机直接安装
+        
+        * 模拟器安装ipa包
+        			
+    		* 将ipa包后缀修改为.zip进行解压，得到.app
+        
+    		* 安装App： `xcrun simctl install booted /..../*.app`
+        
+    		* 运行App： `xcrun simctl launch booted <app identifier>`
+    		
+    		* 卸载App： `xcrun simctl uninstall booted <app identifier>` 
+    
+    	* 模拟器安装.app
+    
+        	* 直接拖入模拟器即可
+    
+    * 方式一：直接使用Xcode运行
+    
+    	* 选择XCTestWDUnitTest工程并使用真机，执行 command + u 开启UITest
+    	
+    * 方式二：命令启动（支持多设备）
+    
+        * 进入 XCTestWD 所在目录
+    
+        * 执行以下命令（真机）
+    
+    		```
+    		xcodebuild -project XCTestWD.xcodeproj \
+    		-scheme XCTestWDUITests \
+    		-destination 'platform=iOS,name=Analysys_01' \
+    		XCTESTWD_PORT=8001 \
+    		clean test
+    		```
+    			
+     		注：Analysys_01：修改为运行手机的名称；8001：不同手机修改不同端口号；
+    
+    	* 模拟器运行
+    
+    			```
+    			xcodebuild -project XCTestWD.xcodeproj \
+    			-scheme XCTestWDUITests \
+    			-destination 'platform=iOS Simulator,name=iPhone 6s' \
+    			XCTESTWD_PORT=8001 \
+    			clean test
+    			```
+    			
+    		注：iPhone 6：模拟器设备型号（使用 instruments -s 命令行查看） 8001：不同模拟器修改不同端口号
 
 ##  其他参考
     
