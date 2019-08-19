@@ -59,7 +59,7 @@
 
 * 开发者证书及签名相关配置
 
-* 低版本Xcode运行高版本真机（如:Xcode 9.2运行iOS 11.x、Xcode 10.1运行iOS 12.X）
+* <font color=red>低版本Xcode运行高版本真机（如:Xcode 9.2运行iOS 11.x、Xcode 10.1运行iOS 12.X、Xcode 10.3运行iOS 13）</font>
 
 	* 可下载最新版本Xcode，找到对应安装App（一般在‘应用程序’目录中），右键 显示包内容 ▸ ⁨Contents⁩ ▸ ⁨Developer⁩ ▸ ⁨Platforms⁩ ▸ ⁨iPhoneOS.platform⁩ ，将该		目录下需要的包拷贝到Xcode 9.2/Xcode 10.1 App对应的目录中即可
 	
