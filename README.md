@@ -145,7 +145,15 @@
 
 * [fastmonkey 压力测试](https://www.cnblogs.com/wallis123/p/10615397.html)
 
+## 运行bug
+* 报错信息
 
+```
+Testing failed:
+	Module compiled with Swift 4.2.1 cannot be imported by the Swift 5.0.1 compiler: /Users/shaochongdu/Desktop/易观/FastMonkeyDemo/XCTestWD-master/Carthage/Build/iOS/Swifter.framework/Modules/Swifter.swiftmodule/arm64.swiftmodule
+	Testing cancelled because the build failed.
+```
+解决方案：查看【选择Xcode编译版本】
 
 
 
